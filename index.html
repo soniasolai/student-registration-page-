@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Project Registration</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="">Select</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+        </select>
+
+        <label for="year">Year:</label>
+        <select id="year" name="year">
+            <option value="">Select</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+
+        <label for="project">Project Title:</label>
+        <input type="text" id="project" name="project">
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+    <hr>
+
+    <!-- Create Card Button -->
+    <button id="createCardBtn" style="margin-top:10px;">Create Card</button>
+
+    <!-- Card Container -->
+    <div id="cardContainer" style="margin-top:15px;"></div>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
